@@ -1,0 +1,9 @@
+.profile-avatar {
+    width: 180ppx;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.profile-title {
+    font-family: sans-serif;   
+}
