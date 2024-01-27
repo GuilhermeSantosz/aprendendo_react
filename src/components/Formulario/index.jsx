@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import { useState, useEffect } from "react";
 
 const Formulario = () => {
@@ -48,6 +49,10 @@ const Formulario = () => {
     
     return (
         <form>
+            {[1, 2, 3, 4, 5].map(item => (
+                <li key={item}>{item}</li>
+            ))}
+
             <input type="text" placeholder="Seu nome" onChange={alteraNome}/>
             <input type="number" placeholder="Nota matéria A" onChange={({target}) => setMateriaA(parseInt(target.value))}/>
             <input type="number" placeholder="Nota matéria B" onChange={({target}) => setMateriaB(parseInt(target.value))}/>
